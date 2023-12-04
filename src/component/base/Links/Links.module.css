@@ -1,0 +1,25 @@
+.links {
+    list-style: none;
+    display: flex;
+    gap: 40px;  
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+
+.links a {
+    transition: 0.2s all;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+}
+
+.links a:hover {
+    text-underline-offset: 40%;
+} 
+
