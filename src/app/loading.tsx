@@ -1,7 +1,8 @@
+import Spinner from "@/component/base/Spinner";
+import styles from './loading.module.css';
+
 const Loading = () => {
-    return (
-        <p>loading</p>
-    )
+    return <Spinner className={styles.loading}/>
 };
 
 export default Loading;

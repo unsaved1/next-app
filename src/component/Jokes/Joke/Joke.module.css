@@ -3,5 +3,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.setup {
     color: var(--secondary);
+}
+
+.punchline {
+    color: var(--white);
 }

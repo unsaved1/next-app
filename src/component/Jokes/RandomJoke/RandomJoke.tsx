@@ -3,11 +3,12 @@
 import { useEffect, useState } from "react";
 import dataService from "@/services/dataService";
 
-import { IJoke, IJokeData } from "../Joke/Joke.props";
+import { IJokeData } from "../Joke/Joke.props";
 import { IRandomJokeProps } from "./RandomJoke.props";
 
 import Joke from "../Joke";
-import Loading from "@/component/base/Loading";
+
+import Spinner from "@/component/base/Spinner";
 
 import styles from './RandomJoke.module.css';
 
@@ -34,7 +35,7 @@ const RandomJoke = ({category, ...props}:IRandomJokeProps) => {
             <div className={styles.joke}>
                 {!loading && joke 
                     ? <Joke data={joke}/>
-                    : <Loading/>
+                    : <Spinner/> 
                 }
             </div>
             <button

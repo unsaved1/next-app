@@ -6,11 +6,11 @@ import styles from './Joke.module.css';
 import cn from 'classnames';
 
 const Joke = ({data, className, ...props}:IJoke) => {
-    const {setup, id} = data;
+    const {setup, punchline} = data;
     return (
         <div className={cn(styles.joke, className)} {...props}>
-            <span>{setup}</span>
-            <span>{id}</span>
+            <span className={styles.setup}>{setup}</span>
+            <span className={styles.punchline}>{punchline}</span>
         </div>
     )
 };

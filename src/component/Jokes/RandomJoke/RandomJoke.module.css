@@ -25,14 +25,24 @@
 }
 
 .joke {
+    position: relative;
     padding: 20px;
-    border: 2px solid #fff;
-    border-radius: 10px;
 
-    min-height: 240px;
+    min-height: 270px;
+    
+    border-radius: 10px;
+    border: 2px solid var(--white);
     
     color: var(--secondary);
     font-weight: 600;
     font-size: 36px;
+}
+
+.joke svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    fill: var(--secondary);       
 }
 

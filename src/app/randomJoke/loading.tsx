@@ -1,5 +1,7 @@
+import Spinner from "@/component/base/Spinner";
+
 const Loading = () => {
-    return <span>LOADING...</span>
+    return <Spinner/>
 };
 
 export default Loading;

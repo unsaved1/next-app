@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import Jokes from "../Jokes";
 
 import styles from './Menu.module.css';
-import Loading from '@/component/base/Loading';
+import Loading from '@/component/base/Spinner';
 
 const Menu = () => {
     return (
