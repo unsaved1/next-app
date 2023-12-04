@@ -10,11 +10,14 @@ body {
   display: grid;
   grid-template-rows: 120px 1fr 10%;
   
-  overflow-x: hidden;
   height: 100vh;
 
   font-family: sans-serif;
   color: var(--white);
+}
+
+body {
+  overflow-y: scroll;
 }
 
 a {
@@ -24,6 +27,7 @@ a {
 
 :root {
   --primary: rgb(87, 197, 87);
+  --secondary: aqua;
   --white: white;
   --black: #1c1c1c;
   --yellow: rgb(242, 242, 20);

@@ -7,11 +7,3 @@
     flex-direction: column;
     gap: 40px;
 }
-
-.joke {
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: aqua;
-}

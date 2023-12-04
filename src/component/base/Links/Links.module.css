@@ -14,9 +14,12 @@
 
 
 .links a {
-    transition: 0.2s all;
     text-decoration: underline;
     text-underline-offset: 20%;
+    color: var(--black);
+    font-weight: 500;
+    
+    transition: 0.2s all;
 }
 
 .links a:hover {

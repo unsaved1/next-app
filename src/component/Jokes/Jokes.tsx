@@ -1,32 +1,25 @@
-'use client'
-
-import { useState, useEffect } from "react";
-
-import { IJokes } from "@/services/dataInterfaces";
+import { IAllJokeData, IJokes } from "./Jokes.props";
 import dataService from "@/services/dataService";
 
-import styles from './Jokes.module.css';
+import Joke from "./Joke";
 
-const Jokes = () => {
-    const [jokes, setJokes] = useState<IJokes>();
-    const {getData} = dataService();
-    useEffect(() => {
-        getData().then(res => {
-            setJokes(res);
-        });
-    }, []);
-    
-    const content = jokes ? jokes.map(item => {
+import styles from './Jokes.module.css';
+import cn from 'classnames';
+
+const Jokes = async ({className, ...props}: IJokes) => {
+    const {getAllJokes} = dataService();
+    const jokes:IAllJokeData = await getAllJokes();
+
+    const content = jokes 
+                        ? jokes.map(item => {
                             return (
-                                <li className={styles.joke} key={item.id}>
-                                    <span>{item.setup}</span>
-                                    <span>{item.punchline}</span>
-                                </li>
+                                <Joke key={item.id} data={item}/>
                             )
-                        }) : <span>loading</span>;
+                        })
+                        : <span>error</span>
 
     return (
-        <ul className={styles.jokes}>
+        <ul className={cn(styles.jokes, className)} {...props}>
             <div className={styles.wrapper}>
                 {content}
             </div>

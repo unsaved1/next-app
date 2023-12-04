@@ -16,6 +16,7 @@ const Header = (props: IHeaderProps) => {
                             <Link href='/profile'>profile</Link>
                             <Link href='/reviews'>reviews</Link>
                             <Link href='/products'>products</Link>
+                            <Link href='/randomJoke'>randomJoke</Link>
                         </Links>
                     </nav>
                 </div>

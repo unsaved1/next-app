@@ -1,0 +1,7 @@
+.joke {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--secondary);
+}

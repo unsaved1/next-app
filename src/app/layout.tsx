@@ -3,6 +3,10 @@ import Header from '@/component/Header'
 import Footer from '@/component/Footer/Footer'
 
 import '../styles/globals.css';
+import {Montserrat} from 'next/font/google'
+const mont = Montserrat({
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'Next App',
@@ -12,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body>
+      <body className={mont.className}>
         <Header/>
         <div className="container">
           {children}

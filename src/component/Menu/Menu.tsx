@@ -1,11 +1,17 @@
-import styles from './Menu.module.css';
+import { Suspense } from 'react';
+
 import Jokes from "../Jokes";
+
+import styles from './Menu.module.css';
+import Loading from '@/component/base/Loading';
 
 const Menu = () => {
     return (
         <section className={styles.menu}>
             <h2>Menu</h2>
-                <Jokes/>
+                <Suspense fallback={<Loading/>}>
+                    <Jokes className={styles.links}/>
+                </Suspense>
         </section>
     )
 };

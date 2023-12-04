@@ -1,0 +1,38 @@
+.randomJoke {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.btn {
+    padding: 10px 10px;
+    width: 160px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: var(--secondary);
+
+    text-transform: uppercase;
+    font-weight: 600;
+
+    transition: 0.2s all;
+}
+
+.btn:active {
+    background: var(--primary);
+}
+
+.joke {
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+
+    min-height: 240px;
+    
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 36px;
+}
+

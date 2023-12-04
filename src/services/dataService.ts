@@ -1,12 +1,20 @@
-import axios from "axios"
-
 const dataService = () => {
-    const getData = async () => {
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN}/programming/ten`);
-        return res.data;
+    const getAllJokes = async () => {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/programming/ten`);
+        return res.json();
     }
 
-    return {getData};
+    const getJoke = async (id: number, ) => {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/${id}`);
+        return res.json();
+    }
+
+    const getRandomJoke = async (category: string) => {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/${category}/random`);
+        return res.json();
+    };
+
+    return {getAllJokes, getJoke, getRandomJoke};
 }
 
 export default dataService;
