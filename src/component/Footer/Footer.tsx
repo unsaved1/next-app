@@ -11,10 +11,10 @@ const Footer = (props: IFooterProps) => {
                 <div className={styles.wrapper}>
                     <Links>
                         <Link href='/'>home</Link>
+                        <Link href='/notes'>notes</Link>
+                        <Link href='/about'>about</Link>
                         <Link href='/admin'>admin</Link>
                         <Link href='/profile'>profile</Link>
-                        <Link href='/reviews'>reviews</Link>
-                        <Link href='/products'>products</Link>
                     </Links>
                 </div>
             </div>

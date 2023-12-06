@@ -8,5 +8,5 @@ const Spinner = ({className, ...props}:ISpinnerProps) => {
         </span>
     )
 };
-
 export default Spinner;
+

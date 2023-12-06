@@ -1,0 +1,10 @@
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

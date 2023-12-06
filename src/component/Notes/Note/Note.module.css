@@ -1,0 +1,75 @@
+.note {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    min-height: 120px;
+    padding: 20px;
+
+    border: 2px solid var(--white);
+    border-radius: 10px;
+}
+
+.title {
+    padding: 8px 16px;
+    max-width: 70%;
+
+    background: none;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+
+    color: var(--white);
+    font-size: 20px;
+}
+
+.titleEdited {
+    border-radius: 4px;
+    border: 1px solid var(--secondary);
+}
+
+.text {
+    padding: 8px 16px;
+    max-width: 70%;
+
+    background: none;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+
+    color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+}
+
+.textEdited {
+    border-radius: 4px;
+    border: 1px solid var(--secondary);
+}
+
+.actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+
+.button {
+    cursor: pointer;
+    padding: 6px 20px;
+}
+
+.edit {
+    border: none;
+    background: var(--secondary);
+}
+
+.save {
+    border: 1px solid var(--white);
+    background: var(--black);
+
+    color: var(--white);
+}

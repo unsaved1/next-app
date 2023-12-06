@@ -12,10 +12,10 @@ const Header = (props: IHeaderProps) => {
                     <Link href='/' className={styles.logo}></Link>
                     <nav>
                         <Links>
+                            <Link href='/about'>about</Link>
+                            <Link href='/notes'>notes</Link>
                             <Link href='/admin'>admin</Link>
                             <Link href='/profile'>profile</Link>
-                            <Link href='/reviews'>reviews</Link>
-                            <Link href='/products'>products</Link>
                             <Link href='/randomJoke'>randomJoke</Link>
                         </Links>
                     </nav>

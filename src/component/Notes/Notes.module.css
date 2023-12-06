@@ -1,0 +1,29 @@
+.notes {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.add {
+	position: fixed;
+	bottom: 100px;
+	right: 60px;
+
+	padding: 4px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border: 2px solid var(--secondary);
+	border-radius: 50%;
+	background: none;
+}
+
+.add span {
+	display: block;
+	width: 100%;
+	border-top: 2px solid var(--secondary);
+}
+
+.add span:first-child {
+	transform: rotate(90deg);
+}
